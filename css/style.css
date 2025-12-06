@@ -1,0 +1,414 @@
+* {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: black;
+  }
+}
+/* Navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+#Home {
+  scroll-margin-top: 100px;
+}
+#AboutMe {
+  scroll-margin-top: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  text-decoration: 0;
+  border-bottom: 1px solid white;
+}
+
+.navbar .judul a {
+  font-family: "Alex Brush";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  text-decoration: 0;
+  color: white;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.navbar .judul :hover {
+  color: gray;
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+}
+
+.navbar .item a {
+  text-decoration: 0;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.navbar .item :hover {
+  color: gray;
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+}
+
+.navbar .icon a {
+  text-decoration: 0;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.navbar .icon :hover {
+  color: gray;
+  transform: translateY(-2px);
+  border-bottom: 1px solid white;
+}
+
+/* Home */
+.home {
+  padding-top: 3rem;
+  background-size: cover;
+  background-image: url(/assets/lfa.gif);
+}
+
+.home .name {
+  padding: 10rem;
+  font-size: 20px;
+  color: white;
+}
+
+.name h2 {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5rem;
+  font-size: 20px;
+  color: white;
+}
+
+.name h3 {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: white;
+}
+
+.name .download a {
+  width: 3rem;
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: black;
+  margin-left: 55rem;
+  padding: 10px;
+}
+
+.name .download :hover {
+  background-color: gray;
+}
+
+/* About me */
+
+.AboutMe h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10rem;
+  margin-left: 15rem;
+}
+
+.AboutMe span {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: gray;
+}
+
+.AboutMe h3 {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin-left: 11.5rem;
+  margin-top: -10px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-img img {
+  height: 60vh;
+  border-radius: 40rem;
+  margin-left: 9rem;
+  margin-bottom: 10rem;
+}
+
+.AboutMe .biodata img {
+  height: 20vh;
+  margin-right: 8.5rem;
+  margin-bottom: 15rem;
+  max-width: 20rem;
+  max-height: 10rem;
+}
+
+.biodata p {
+  margin-top: 4rem;
+  font-size: 2.7vh;
+  margin-right: 5rem;
+}
+
+/* Skills */
+.MySkill {
+  background-image: url(https://i.pinimg.com/736x/d6/b0/72/d6b072c214a9d768f7f9d807dcb54968.jpg);
+  padding-left: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 30rem;
+  height: 30vh;
+  width: 189.6vh;
+}
+
+.MySkill h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.MySkill span {
+  margin-bottom: 3rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: gray;
+}
+
+.MySkill h3 {
+  color: white;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skill-container {
+  display: flex;
+  gap: 1rem;
+  margin-left: 5rem;
+}
+
+.skill-card {
+  background-image: url(https://i.pinimg.com/originals/8b/86/5d/8b865ddcb9bb441b73db346574214f49.gif);
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+  transition: transform 0.5s;
+  text-align: center;
+  max-width: 15rem;
+  border-radius: 20px;
+  margin-top: 10rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card p {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Project */
+
+.MyProject {
+  padding: 8rem;
+}
+
+.MyProject h1 {
+  color: black;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.MyProject span {
+  color: gray;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.MyProject h3 {
+  padding-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card {
+  box-shadow: 3px 4px rgb(102, 98, 98);
+  background: white;
+  max-width: 30rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  height: 200px;
+  background-color: gray;
+}
+
+.project-isi {
+  padding: 1.5rem;
+}
+
+.project-isi p {
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.project-visit {
+  background: gray;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-visit:hover {
+  background: rgb(74, 69, 69);
+}
+
+/* Contact */
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 16.5rem;
+  background-color: white;
+}
+.contact h1 {
+  color: black;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact span {
+  color: gray;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+.form-container {
+  display: flex;
+  padding-top: 2rem;
+  background-image: url(/assets/bmw.gif);
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50rem;
+  height: 20rem;
+  background-color: black;
+  padding-left: 3rem;
+}
+
+.input-contact {
+  padding: 0.5rem;
+  padding-right: 10rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.left-form p {
+  padding: 5px;
+  color: white;
+}
+
+.left-form textarea {
+  border-radius: 5px;
+  padding-bottom: 1rem;
+  padding-right: 10rem;
+  padding-left: 7px;
+  padding-top: 7px;
+}
+.left-form button {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-family: "Mate SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.right-contact {
+  margin-top: 2rem;
+  margin-left: 12rem;
+  border-radius: 10px;
+  height: 20vh;
+  background-color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-right: 1rem;
+}
+
+.right-contact a {
+  text-decoration: 0;
+  color: black;
+  font-family: "Mate SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.right-contact p {
+  margin-bottom: 5px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: gray;
+}
+
+.right-contact a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
