@@ -6,9 +6,15 @@
   padding: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: black;
+@media (max-width: 767px) {
+  header .navbar {
+    max-width: 2000rem;
+  }
+  .navbar .judul a {
+    font-size: 10px;
+  }
+  .home {
+    width: min-content;
   }
 }
 /* Navbar */
@@ -47,12 +53,10 @@ header {
   text-decoration: 0;
   color: white;
   margin-left: 10px;
-  transition: transform 0.3s;
 }
 
-.navbar .judul :hover {
+.navbar .judul a:hover {
   color: gray;
-  transform: translateY(-5px);
   border-bottom: 1px solid white;
 }
 
@@ -61,12 +65,10 @@ header {
   color: white;
   padding: 10px;
   font-size: 20px;
-  transition: transform 0.3s;
 }
 
 .navbar .item :hover {
   color: gray;
-  transform: translateY(-5px);
   border-bottom: 1px solid white;
 }
 
@@ -75,12 +77,10 @@ header {
   color: white;
   margin: 10px;
   font-size: 20px;
-  transition: transform 0.3s;
 }
 
 .navbar .icon :hover {
   color: gray;
-  transform: translateY(-2px);
   border-bottom: 1px solid white;
 }
 
@@ -186,7 +186,8 @@ header {
 
 /* Skills */
 .MySkill {
-  background-image: url(https://i.pinimg.com/736x/d6/b0/72/d6b072c214a9d768f7f9d807dcb54968.jpg);
+  background-image: url(/assets/f1\ road.jpg);
+  background-size: cover;
   padding-left: 6rem;
   padding-top: 8rem;
   padding-bottom: 30rem;
@@ -223,8 +224,8 @@ header {
 }
 
 .skill-card {
-  background-image: url(https://i.pinimg.com/originals/8b/86/5d/8b865ddcb9bb441b73db346574214f49.gif);
-  backdrop-filter: blur(20px);
+  background-image: url(/assets/hack.gif);
+
   padding: 1.5rem;
   transition: transform 0.5s;
   text-align: center;
@@ -238,6 +239,7 @@ header {
 }
 
 .skill-card p {
+  backdrop-filter: blur(3px);
   color: white;
   font-family: "Anton", sans-serif;
   font-weight: 400;
@@ -247,18 +249,20 @@ header {
 /* Project */
 
 .MyProject {
+  background-image: url(/assets/wpp.jpg);
+  background-size: cover;
   padding: 8rem;
 }
 
 .MyProject h1 {
-  color: black;
+  color: white;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .MyProject span {
-  color: gray;
+  color: black;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -266,6 +270,7 @@ header {
 }
 
 .MyProject h3 {
+  color: black;
   padding-bottom: 2rem;
 }
 
@@ -281,6 +286,7 @@ header {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 5px;
   transition: transform 0.3s;
+  border-radius: 10px;
 }
 
 .project-card:hover {
@@ -288,8 +294,13 @@ header {
 }
 
 .project-img {
+  border-radius: 10px;
   height: 200px;
   background-color: gray;
+}
+
+.project-isi h3 {
+  color: black;
 }
 
 .project-isi {
@@ -366,11 +377,17 @@ header {
   padding-top: 7px;
 }
 .left-form button {
-  padding: 3px 10px;
+  padding: 5px 15px;
   border-radius: 5px;
   font-family: "Mate SC", serif;
   font-weight: 500;
   font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.left-form button:hover {
+  background-color: gray;
 }
 
 .right-contact {
@@ -398,7 +415,7 @@ header {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: gray;
+  color: black;
 }
 
 .right-contact a img {
@@ -407,8 +424,14 @@ header {
 }
 /* Footer */
 footer {
+  background-image: url(/assets/front\ f1.png);
+  background-size: cover;
   background-color: black;
-  color: white;
   text-align: center;
   padding: 2rem;
+}
+
+footer h3 {
+  color: white;
+  backdrop-filter: blur(10px);
 }
