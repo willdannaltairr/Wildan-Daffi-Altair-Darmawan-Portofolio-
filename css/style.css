@@ -30,6 +30,7 @@ html {
 }
 
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
 }
@@ -190,9 +191,7 @@ header {
   background-size: cover;
   padding-left: 6rem;
   padding-top: 8rem;
-  padding-bottom: 30rem;
-  height: 30vh;
-  width: 189.6vh;
+  padding-bottom: 15rem;
 }
 
 .MySkill h1 {
@@ -282,7 +281,7 @@ header {
 .project-card {
   box-shadow: 3px 4px rgb(102, 98, 98);
   background: white;
-  max-width: 30rem;
+  width: 30rem;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 5px;
   transition: transform 0.3s;
@@ -293,9 +292,10 @@ header {
   transform: translateY(-5px);
 }
 
-.project-img {
+.project-img img {
   border-radius: 10px;
-  height: 200px;
+  height: 16rem;
+  width: 25rem;
   background-color: gray;
 }
 
@@ -315,7 +315,7 @@ header {
 .project-visit {
   background: gray;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 5px;
   text-decoration: none;
 }
