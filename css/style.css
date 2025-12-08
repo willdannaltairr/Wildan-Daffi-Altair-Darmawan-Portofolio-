@@ -7,17 +7,179 @@
 }
 
 @media (max-width: 767px) {
-  header .navbar {
-    max-width: 2000rem;
+   header .navbar{
+    top: 0;
+    background: #111;
+    flex-direction: column;
+    text-align: center;
   }
-  .navbar .judul a {
+  main .home {
+    padding: 4.5rem;
+    background-size: 100%;
+    background-image: url(/assets/lfa.gif);
+  }
+  main .home .name {
+    padding-left: 0.5rem;
+    font-size: 10px;
+    color: white;
+  }
+  main .name .download a {
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: black;
+  margin-left: -6rem;
+}
+  main .AboutMe h1 {
+    font-size: 15px;
+    margin-left: 8rem;
+  }
+  main .AboutMe h3 {
+    margin-left: 5.5rem;
     font-size: 10px;
   }
-  .home {
-    width: min-content;
+  main .about-content {
+    flex-direction: column;
+  }
+  main .profile-img img {
+    height: 30vh;
+    border-radius: 40rem;
+    margin-left: 4.5rem;
+  }
+  main .biodata p {
+    font-size: 10px;
+    padding-left: 5rem;
+    margin-top: -12rem;
+  }
+  main .AboutMe .biodata img {
+    margin-right: 8rem;
+    margin-bottom: 15rem;
+    max-width: 7rem;
+    max-height: 5rem;
+  }
+  main .MySkill {
+    background-image: url(/assets/f1\ road.jpg);
+    background-size: 100%;
+  }
+  main .MySkill h1 {
+    color: white;
+    font-size: 20px;
+    margin-left: 1rem;
+  }
+  main .MySkill h3 {
+    margin-left: 2.5rem;
+    color: white;
+    font-size: 10px;
+  }
+  main .skill-container {
+    flex-direction: column;
+    margin-left: -2.5rem;
+    margin-right: 4.5rem;
+    margin-top: -7rem;
+  }
+  main .skill-card img {
+    height: 10vh;
+    width: 10vh;
+  }
+  main .skill-card {
+    background-image: url(/assets/hack.gif);
+    transition: transform 0.5s;
+    text-align: center;
+  }
+  main .MyProject {
+    background-image: url(/assets/wpp.jpg);
+    background-size: 100%;
+    padding: 8rem;
+  }
+  main .MyProject h1 {
+    font-size: 15px;
+    margin-left: 0.5rem;
+  }
+  main .MyProject h3 {
+    font-size: 10px;
+    color: white;
+    margin-left: 0rem;
+  }
+  main .project-container {
+    flex-direction: column;
+  }
+  main .project-card {
+    margin-left: -5rem;
+    box-shadow: 3px 4px rgb(102, 98, 98);
+    background: white;
+    width: 15rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+  }
+  main .project-img img {
+    border-radius: 10px;
+    height: 10rem;
+    width: 15rem;
+    background-color: gray;
+  }
+  main .project-isi h3 {
+    margin-left: 0rem;
+    font-size: 15px;
+    color: black;
+  }
+  main .contact {
+    padding-top: 8.5rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    background-color: white;
+  }
+  main .contact h1 {
+    font-size: 15px;
+    margin-left: 5rem;
+  }
+  main .contact h3 {
+    font-size: 10px;
+    margin-left: 4.6rem;
+    padding-bottom: 1rem;
+  }
+  main .form-container {
+    flex-direction: column;
+    padding-top: 2rem;
+    background-image: url(/assets/bmw.gif);
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 15rem;
+    height: 18rem;
+    background-color: black;
+    padding-left: 2rem;
+    margin-left: -1.3rem;
+  }
+  main .input-contact {
+    padding: 0.5rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    background-color: white;
+  }
+  main .left-form p {
+    font-size: 10px;
+    color: white;
+  }
+  main .left-form textarea {
+    border-radius: 5px;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 7px;
+    padding-top: 7px;
+  }
+  main .right-contact {
+    border-radius: 10px;
+    background-color: white;
+    margin-left: -1.5rem;
+    width: 14rem;
+    padding-bottom: 1rem;
+  }
+  footer h3 {
+    font-size: 15px;
+    padding-top: 5rem;
   }
 }
-/* Navbar */
 html {
   scroll-behavior: smooth;
 }
@@ -26,7 +188,10 @@ html {
   scroll-margin-top: 100px;
 }
 #AboutMe {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 125px;
+}
+#Project {
+  scroll-margin-top: -10px;
 }
 
 header {
@@ -64,7 +229,7 @@ header {
 .navbar .item a {
   text-decoration: 0;
   color: white;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
 }
 
@@ -85,7 +250,6 @@ header {
   border-bottom: 1px solid white;
 }
 
-/* Home */
 .home {
   padding-top: 3rem;
   background-size: cover;
@@ -112,12 +276,10 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-
   color: white;
 }
 
 .name .download a {
-  width: 3rem;
   font-family: "Inconsolata", monospace;
   font-style: normal;
   color: white;
@@ -128,11 +290,10 @@ header {
   padding: 10px;
 }
 
+
 .name .download :hover {
   background-color: gray;
 }
-
-/* About me */
 
 .AboutMe h1 {
   font-family: "Anton", sans-serif;
@@ -155,12 +316,11 @@ header {
   font-style: normal;
   box-sizing: border-box;
   margin-left: 11.5rem;
-  margin-top: -10px;
 }
 
 .about-content {
   display: flex;
-  align-items: center;
+  padding-top: 3rem;
   gap: 3rem;
 }
 
@@ -180,12 +340,11 @@ header {
 }
 
 .biodata p {
-  margin-top: 4rem;
-  font-size: 2.7vh;
+  margin-top: 2rem;
+  font-size: 3vh;
   margin-right: 5rem;
 }
 
-/* Skills */
 .MySkill {
   background-image: url(/assets/f1\ road.jpg);
   background-size: cover;
@@ -224,13 +383,13 @@ header {
 
 .skill-card {
   background-image: url(/assets/hack.gif);
-
   padding: 1.5rem;
   transition: transform 0.5s;
   text-align: center;
   max-width: 15rem;
   border-radius: 20px;
   margin-top: 10rem;
+  margin-left: 1rem;
 }
 
 .skill-card:hover {
@@ -244,8 +403,6 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-
-/* Project */
 
 .MyProject {
   background-image: url(/assets/wpp.jpg);
@@ -295,7 +452,7 @@ header {
 .project-img img {
   border-radius: 10px;
   height: 16rem;
-  width: 25rem;
+  width: 26rem;
   background-color: gray;
 }
 
@@ -324,13 +481,13 @@ header {
   background: rgb(74, 69, 69);
 }
 
-/* Contact */
 .contact {
   padding-top: 8rem;
   padding-bottom: 2rem;
-  padding-left: 16.5rem;
+  padding-left: 20rem;
   background-color: white;
 }
+
 .contact h1 {
   color: black;
   font-family: "Anton", sans-serif;
@@ -371,11 +528,12 @@ header {
 
 .left-form textarea {
   border-radius: 5px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   padding-right: 10rem;
   padding-left: 7px;
   padding-top: 7px;
 }
+
 .left-form button {
   padding: 5px 15px;
   border-radius: 5px;
@@ -422,7 +580,7 @@ header {
   width: 1.5rem;
   height: 1.5rem;
 }
-/* Footer */
+
 footer {
   background-image: url(/assets/front\ f1.png);
   background-size: cover;
@@ -431,7 +589,7 @@ footer {
   padding: 2rem;
 }
 
+
 footer h3 {
   color: white;
-  backdrop-filter: blur(10px);
 }
